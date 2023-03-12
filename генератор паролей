@@ -1,0 +1,11 @@
+import random
+
+pas = "+-/*!&$#?=@abcdefghijklnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+a = int(input("ведите длину пароля "))
+
+password = " "
+
+for i in range(a):
+    password += pas[random.randint(0,len(pas))]
+
+print(password)
